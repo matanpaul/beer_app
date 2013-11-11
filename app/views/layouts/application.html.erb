@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>BeerPong</title>
+	  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+	  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+	  <%= csrf_meta_tags %>
+	</head>
+	<body>
+		<div class='container'>		
+			<div class="navbar">
+			  <div class="navbar-inner">
+			    <a class="brand" href="<%=root_path%>">Beer Pong</a>
+			    <ul class="nav">
+			      <li><a href=>Beer Prowl</a></li>
+			      <li><a href="<%=''%>">Getting started</a></li>
+			      <li><a href="<%=about_path%>">About</a></li>			  
+			      <li><a href="<%=how_it_works_path%>">How it Works</a></li>			 
+			    </ul>
+			  </div>
+			</div>
+	<%= yield %>
+	</div>
+
+	</body>
+</html>
