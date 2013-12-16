@@ -17,7 +17,7 @@ class BeersController < ApplicationController
 		@locations.name = Location.where(name: @location.capitalize).first_or_create
 			
 
-		#@beer = Beer.where(beer_name: @beer.beer_name).first_or_create
+		@beer = Beer.where(beer_name: @beer.beer_name).first_or_create
 		@beer.save
 
 		@beerlocation.user = current_user
