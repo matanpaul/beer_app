@@ -1,0 +1,23 @@
+
+<%=form_for @beer do |f| %>
+	<%=label_tag :location %>
+	<%= text_field_tag :location,"",:required => true %>
+
+	<%= f.label :beer_name, "Beer Name" %>
+	<%= f.text_field :beer_name %>
+
+	<%= f.label :category, "Category" %>
+	<%= f.text_field :category %>
+
+		<%= fields_for @beerlocation do |p| %>
+      		<%=p.label :price %>
+      		<%=p.text_field :price %>
+   		<% end %>
+
+
+	
+	<div>
+		<%= f.submit "Add Beer" %>
+	</div>
+<% end %>
+

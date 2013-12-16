@@ -1,0 +1,17 @@
+<h4><%=@beer.beer_name%></h4>
+<h4><%=@beer.category%></h4>
+
+You can get the beer at:
+
+<table class ='table table-condensed'>
+	<tr>
+		<th>Beer Location</th>
+		<th>Price</th>
+	</tr>
+	<%@beerlocation.each do |l|%>
+		<tr>
+			<td> <%=l.location.name%> </td>
+			<td> $<%=l.price%> </td>
+		</tr>
+	<%end%>	
+</table>

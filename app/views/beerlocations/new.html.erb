@@ -1,0 +1,14 @@
+<%=form_for @beerlocation do |f| %>
+	
+	<%= f.label :price, "Price" %>
+	<%= f.text_field :price %>
+
+	<%= f.label :comments, "comments" %>
+	<%= f.text_field :comments %>
+	
+	
+	<div>
+		<%= f.submit "Tag beer" %>
+	</div>
+<% end %>
+

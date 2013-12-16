@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  location_name: MyText
+  location_id: 1
+  beer_id: 1
+  comments: MyText
+  price: 9.99
+
+two:
+  user_id: 1
+  location_name: MyText
+  location_id: 1
+  beer_id: 1
+  comments: MyText
+  price: 9.99

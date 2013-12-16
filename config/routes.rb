@@ -1,7 +1,13 @@
 BeerPong::Application.routes.draw do
+  devise_for :users
   root 'main#index'
   get 'about' => 'main#about'
   get 'how_it_works' => 'main#how_it_works'
+
+  resources :main
+  resources :beers
+  resources :beerlocations
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
